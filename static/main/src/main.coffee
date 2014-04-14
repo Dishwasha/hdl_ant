@@ -1,0 +1,4 @@
+define ->
+  class Main
+    constructor: ->
+

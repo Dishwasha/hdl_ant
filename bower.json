@@ -1,0 +1,18 @@
+{
+  "name": "hdl_ant",
+  "version": "1.0.0",
+  "main": "",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "requirejs": "https://github.com/jrburke/requirejs.git#2.1.11",
+    "require-cs": "https://github.com/requirejs/require-cs.git#0.4.4",
+    "jquery": "~> 1.11",
+    "underscore": "~> 1.6",
+    "underscore.string": "~> 2.3"
+  },
+  "devDependencies": {
+  }
+}

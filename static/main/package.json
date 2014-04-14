@@ -1,0 +1,14 @@
+{
+  "family": "hdl_ant",
+  "name": "main",
+  "version": "0.0.1",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery",
+      "underscore": "underscore",
+      "underscore-string": "underscore-string"
+    },
+    "output": ["main.js"]
+  }
+}
