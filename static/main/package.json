@@ -9,6 +9,6 @@
       "underscore": "underscore",
       "underscore-string": "underscore-string"
     },
-    "output": ["main.js"]
+    "output": ["main.js", "menu.js", "module.js", "main.css", "menu.css"]
   }
 }

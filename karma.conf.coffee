@@ -12,9 +12,15 @@ module.exports = (config) ->
 
     # list of files / patterns to load in the browser
     files: [
+      'sea-modules/jquery/dist/jquery.js',
+      'sea-modules/jasmine-fixture/dist/jasmine-fixture.min.js',
+      'sea-modules/jasmine-jquery/lib/jasmine-jquery.js',
+      'sea-modules/underscore/underscore.js',
+      'sea-modules/underscore.string/dist/underscore.string.min.js',
       'test-main.js',
       {pattern: 'static/**/src/*.coffee', included: false},
-      {pattern: 'test/**/*.spec.coffee', included: false}
+      {pattern: 'test/**/*_spec.coffee', included: false},
+      {pattern: 'static/**/src/*.css', included: false, watched: false, served: true}
     ]
 
     # list of files to exclude

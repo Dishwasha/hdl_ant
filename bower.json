@@ -7,9 +7,12 @@
     "**/*.txt"
   ],
   "dependencies": {
+    "foundation": "~> 5.2",
+    "jasmine-fixture": "~> 1.2",
+    "jasmine-jquery": "~> 2.0",
+    "jquery": "~> 1.11",
     "requirejs": "https://github.com/jrburke/requirejs.git#2.1.11",
     "require-cs": "https://github.com/requirejs/require-cs.git#0.4.4",
-    "jquery": "~> 1.11",
     "underscore": "~> 1.6",
     "underscore.string": "~> 2.3"
   },
