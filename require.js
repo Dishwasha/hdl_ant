@@ -1,5 +1,6 @@
 var dev = window.location.search.indexOf('dev=') != -1;
 var main = dev ? '../static/main/src' : 'hdl_ant/main/0.0.1'
+var antenna = dev ? '../static/antenna/src' : 'hdl_ant/antenna/0.0.1'
 var baseUrl = 'sea-modules'
 
 requirejs.config({
@@ -17,6 +18,7 @@ requirejs.config({
     "fastclick": "fastclick/lib/fastclick",
     "foundation": "foundation/js/foundation.min",
     "jquery": "jquery/dist/jquery",
+    "antenna": antenna,
     "main": main,
     "modernizr": "modernizr/modernizr",
     "require-cs": "require-cs/cs",
@@ -25,8 +27,24 @@ requirejs.config({
   }
 });
 
-main = dev ? 'cs!main/main' : 'hdl_ant/main/0.0.1/main'
-requirejs(['jquery', 'underscore', 'underscore.string', 'fastclick', 'modernizr', 'foundation', main], function($, _, str, fastclick, modernizr, foundation, Main) {
-  main = new Main();
-  $(document).foundation();
-});
+main = dev ? 'cs!main/main' : 'main/main'
+requirejs([
+  'jquery',
+  'underscore',
+  'underscore.string',
+  'fastclick',
+  'modernizr',
+  'foundation',
+  main,
+],function(
+  $,
+  _,
+  str,
+  fastclick,
+  modernizr,
+  foundation,
+  Main) {
+    main = new Main();
+    $(document).foundation();
+  }
+);

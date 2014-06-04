@@ -1,4 +1,4 @@
-define ['require', 'cs!./module', 'cs!./menu'], (require, Module, Menu) ->
+define ['require', 'cs!main/module', 'cs!main/menu'], (require, Module, Menu) ->
   class Main extends Module
     @include Menu.instanceMethods
 
