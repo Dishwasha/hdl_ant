@@ -45,3 +45,7 @@ $ ./node_modules/.bin/karma start
 
 Visit <http://docs.spmjs.org/> for detail information.
 
+
+LICENSE
+-------
+Any licensed radio amateur may use this program without charge; all other persons must send $73 to the ARRL Foundation, 225 Main St., Newington, CT 06111
