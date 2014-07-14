@@ -13,23 +13,33 @@ requirejs.config({
     name: 'coffee-script',
     location: 'require-cs',
     main: 'coffee-script'
+  },{
+    name: 'text',
+    location: '..',
+    main: 'haml'
+  },{
+    name: 'hgn',
+    location: 'require-hogan',
+    main: 'hgn'
   }],
   paths: {
+    "antenna": antenna,
     "fastclick": "fastclick/lib/fastclick",
     "foundation": "foundation/js/foundation.min",
-    "jquery": "jquery/dist/jquery",
-    "antenna": antenna,
+    "hamljs": "haml-js/lib/haml.min",
+    "hogan": "require-hogan/hogan",
+    "text": "../haml",
     "main": main,
     "modernizr": "modernizr/modernizr",
     "require-cs": "require-cs/cs",
+    "require-text": "require-text/text",
     "underscore": "underscore/underscore",
-    "underscore.string": "underscore.string/dist/underscore.string.min",
+    "underscore.string": "underscore.string/dist/underscore.string.min"
   }
 });
 
 main = dev ? 'cs!main/main' : 'main/main'
 requirejs([
-  'jquery',
   'underscore',
   'underscore.string',
   'fastclick',
@@ -37,7 +47,6 @@ requirejs([
   'foundation',
   main,
 ],function(
-  $,
   _,
   str,
   fastclick,

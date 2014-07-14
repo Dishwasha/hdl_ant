@@ -8,11 +8,14 @@
   ],
   "dependencies": {
     "foundation": "~> 5.2",
+    "haml-js": "https://github.com/uglyog/clientside-haml-js.git#release_5_4",
     "jasmine-fixture": "~> 1.2",
     "jasmine-jquery": "~> 2.0",
     "jquery": "~> 1.11",
     "requirejs": "https://github.com/jrburke/requirejs.git#2.1.11",
     "require-cs": "https://github.com/requirejs/require-cs.git#0.4.4",
+    "require-hogan": "https://github.com/millermedeiros/requirejs-hogan-plugin.git#0.3.1",
+    "require-text": "https://github.com/requirejs/text.git#2.0.12",
     "underscore": "~> 1.6",
     "underscore.string": "~> 2.3"
   },
